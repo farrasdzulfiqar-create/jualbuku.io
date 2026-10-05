@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Farras</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 18px 8%;
+            background: rgba(15, 23, 42, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* HOME */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 100px 20px 50px;
+            background: linear-gradient(135deg, #0f172a, #172554);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: translateY(-3px);
+        }
+
+        /* SECTION */
+        section {
+            padding: 90px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        /* PROJECT */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.3s;
+            border: 1px solid #334155;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Farras.</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="hero">
+            <h1>Halo, Saya <span>Farras</span></h1>
+
+            <p>
+                Pelajar & Web Developer
+            </p>
+
+            <a href="#about" class="btn">
+                Lihat Profil
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2 class="title">Tentang Saya</h2>
+
+        <div class="about">
+            <p>
+                Halo! Saya Farras. Saya adalah seorang pelajar
+                yang tertarik dengan dunia teknologi, pemrograman,
+                desain website, dan pengembangan aplikasi.
+            </p>
+
+            <p>
+                Website ini dibuat menggunakan HTML, CSS, dan
+                JavaScript sebagai contoh portfolio sederhana.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- PROJECT -->
+    <section id="projects">
+        <h2 class="title">Project Saya</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Website Portfolio</h3>
+                <p>
+                    Website portfolio sederhana menggunakan
+                    HTML dan CSS.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Database</h3>
+                <p>
+                    Project perancangan database dan SQL
+                    untuk sistem penjualan.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Aplikasi Web</h3>
+                <p>
+                    Project aplikasi web sederhana menggunakan
+                    teknologi web modern.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2 class="title">Contact</h2>
+
+        <div class="contact">
+            <p>📧 Email: farras@email.com</p>
+            <p>📱 Instagram: @farras</p>
+            <p>📍 Indonesia</p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Farras. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script>
+        // Pesan ketika halaman dibuka
+        console.log("Website berhasil dijalankan!");
+
+        // Efek tombol
+        const button = document.querySelector(".btn");
+
+        button.addEventListener("click", function() {
+            console.log("Tombol Lihat Profil diklik");
+        });
+    </script>
+
+</body>
+</html>
